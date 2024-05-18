@@ -1,3 +1,4 @@
+import GridBackground from "./ui/GridBackground";
 import { Spotlight } from "./ui/Spotlight";
 
 export default function Hero() {
@@ -13,6 +14,7 @@ export default function Hero() {
           fill="purple"
         />
         <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
+        <GridBackground />
       </div>
     </div>
   );
