@@ -9,7 +9,7 @@ import MagicButton from "./ui/MagicButton";
 
 export default function Approach() {
   return (
-    <section className="w-full py-20">
+    <section className="w-full py-20" id="approach">
       <h1 className="heading">
         My <span className="text-purple">approach</span>
       </h1>
