@@ -6,7 +6,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 export default function Hero() {
   return (
-    <div className="tpb-30 pt-36">
+    <div className="pb-30 pt-30">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
