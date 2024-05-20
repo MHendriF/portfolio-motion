@@ -115,7 +115,7 @@ const Card = ({
 };
 
 const AceternityIcon = ({ order }: { order: string }) => {
-  return <MagicButton title={order} otherClasses="!bg-[#161A31]" />;
+  return <ShimmerButton title={order} />;
 };
 
 export const Icon = ({ className, ...rest }: any) => {
