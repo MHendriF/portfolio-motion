@@ -29,6 +29,10 @@ export default function RecentProjects() {
                   alt={title}
                   width={500}
                   height={500}
+                  style={{
+                    width: "auto",
+                    height: "auto",
+                  }}
                   className="z-10 absolute bottom-0"
                 />
               </div>
