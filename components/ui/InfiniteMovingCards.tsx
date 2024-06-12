@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/utils/cn";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 type CardProps = {
@@ -8,6 +9,7 @@ type CardProps = {
     quote: string;
     name: string;
     title: string;
+    img: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -48,15 +50,9 @@ export const InfiniteMovingCards = ({
   const getDirection = () => {
     if (containerRef.current) {
       if (direction === "left") {
-        containerRef.current.style.setProperty(
-          "--animation-direction",
-          "forwards"
-        );
+        containerRef.current.style.setProperty("--animation-direction", "forwards");
       } else {
-        containerRef.current.style.setProperty(
-          "--animation-direction",
-          "reverse"
-        );
+        containerRef.current.style.setProperty("--animation-direction", "reverse");
       }
     }
   };
@@ -75,7 +71,7 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20 w-screen overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative z-20 w-screen overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
         className
       )}
     >
@@ -90,11 +86,9 @@ export const InfiniteMovingCards = ({
         {items.map((item, idx) => (
           <li
             key={idx}
-            className="w-[90vw] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 p-4 md:p-16 md:w-[60vw]"
+            className="w-[60vw] max-w-full relative rounded-2xl border flex-shrink-0 border-slate-700 p-4 md:p-14 md:w-[40vw] bg-slate-50 dark:bg-[rgb(4,7,29)]"
             style={{
-              background: "rgb(4,7,29)",
-              backgroundColor:
-                "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+              backgroundColor: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
             }}
           >
             <blockquote>
@@ -102,19 +96,26 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <span className=" relative z-20 text-sm md:text-lg leading-[1.6] text-white font-normal">
+              <span className=" relative z-20 text-sm md:text-md leading-[1.6] text-slate-800 dark:text-white font-normal">
                 {item.quote}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
                   <div className="me-3">
-                    <img src="/profile.svg" alt="profile" />
+                    <Image
+                      src={item.img}
+                      alt="profile"
+                      width={50}
+                      height={50}
+                      unoptimized
+                      className="w-12 h-12 rounded-full object-cover"
+                    />
                   </div>
                   <div className="flex flex-col gap-1">
-                    <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
+                    <span className=" text-sm leading-[1.6] text-gray-500 dark:text-gray-400 font-normal">
                       {item.name}
                     </span>
-                    <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
+                    <span className=" text-sm leading-[1.6] text-gray-500 dark:text-gray-400 font-normal">
                       {item.title}
                     </span>
                   </div>
