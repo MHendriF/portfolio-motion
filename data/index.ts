@@ -38,7 +38,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Tech enthusiast with a passion for development",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -49,7 +49,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently building some cool frontend projects",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -81,7 +81,7 @@ export const projects = [
   {
     id: 2,
     title: "WhatzApp",
-    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    des: "WhatzApp is a dynamic messaging application that brings you the familiar, seamless communication experience you love. Designed as a WhatsApp clone, WhatzApp offers real-time messaging, voice and video calls, and multimedia sharing, all within a sleek and intuitive interface. Stay connected with friends, family, and colleagues effortlessly, enjoying robust features and end-to-end encryption to keep your conversations private and secure. Experience the future of communication with WhatzApp!",
     img: "/apps/whatzapp.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/icons/gemini.svg", "/c.svg"],
     link: "https://whatzapp-mhf.vercel.app",
@@ -89,9 +89,9 @@ export const projects = [
   {
     id: 3,
     title: "Imaginify - AI Image SaaS ",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    des: "Imaginify is a cutting-edge Software-as-a-Service (SaaS) application that integrates advanced AI features with a seamless payments and credits system. Utilizing the latest tech stack, Imaginify delivers powerful tools and functionalities designed to enhance productivity and streamline workflows. Experience the future of software with Imaginify, where innovation meets efficiency in a user-friendly platform tailored to meet your needs.",
     img: "/apps/imaginify.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/c.svg"],
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/c.svg", "/icons/cloudinary.svg", "/icons/stripe.svg"],
     link: "https://mhf-imaginify.vercel.app",
   },
   {
@@ -105,7 +105,7 @@ export const projects = [
   {
     id: 5,
     title: "Social Space",
-    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    des: "Social Space is not just another social media platform; it's your digital universe where connections flourish, creativity thrives, and communities come alive. Powered by Laravel and Vue.js, Social Space is designed to elevate your social experience with a plethora of innovative features and seamless functionalities.",
     img: "/apps/social-space.png",
     iconLists: ["/icons/laravel.svg", "/tail.svg", "/icons/vue.svg", "/icons/gemini.svg", "/icons/chatgpt.svg"],
     link: "#",
@@ -113,7 +113,7 @@ export const projects = [
   {
     id: 6,
     title: "ePAK Widyaprada",
-    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    des: "ePAK Widyaprada is a cutting-edge electronic system designed to revolutionize the proposal and evaluation process for Credit Score Determination. Streamline your employee promotion applications with ease and efficiency. Built on the robust Laravel framework, ePAK Widyaprada offers a user-friendly interface and powerful features to ensure a smooth and seamless credit score management experience. Empower your organization with the ability to make informed promotion decisions quickly and accurately.",
     img: "/apps/epak.png",
     iconLists: ["/icons/laravel.svg", "/icons/bootstrap.svg", "/icons/javascript.svg"],
     link: "https://epakwp.pauddikdasmen.kemdikbud.go.id",
@@ -121,23 +121,23 @@ export const projects = [
   {
     id: 7,
     title: "Helpdesk Support",
-    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    des: "Helpdesk Management Application is a powerful tool designed to streamline your ticketing process. With our application, reporting issues becomes effortless, allowing you to quickly address disruptions. Easily track the status of your tickets and access detailed information based on your selected status and time. Stay on top of your helpdesk operations and ensure timely resolutions with our intuitive and user-friendly interface.",
     img: "/apps/helpdesk.png",
     iconLists: ["/icons/laravel.svg", "/tail.svg", "/icons/javascript.svg"],
     link: "#",
   },
   {
     id: 8,
-    title: "PMPSmart",
-    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    img: "/apps/pmpsmart.png",
-    iconLists: ["/icons/laravel.svg", "/icons/bootstrap.svg", "/icons/javascript.svg"],
-    link: "#",
+    title: "Aku Pintar Siswa",
+    des: "Aku Pintar Siswa is an application from the Aku Pintar platform, specifically designed to support students' learning processes. This app offers a variety of features that help students with learning, exam preparation, and choosing the right major based on their interests and talents.",
+    img: "/apps/ap-siswa.png",
+    iconLists: ["/icons/android.svg", "/icons/kotlin.svg", "/icons/firebase.svg"],
+    link: "https://akupintar.id",
   },
   {
     id: 9,
     title: "Samurai Point",
-    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    des: "Samurai Point is your ultimate solution for product, sales, and point management. This versatile application empowers you to efficiently manage your product inventory, streamline sales processes, and track customer loyalty points seamlessly.",
     img: "/apps/samurai-point.png",
     iconLists: ["/icons/laravel.svg", "/icons/bootstrap.svg", "/icons/javascript.svg"],
     link: "#",
