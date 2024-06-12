@@ -3,13 +3,7 @@ import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "@/utils/cn";
 
-export const TextGenerateEffect = ({
-  words,
-  className,
-}: {
-  words: string;
-  className?: string;
-}) => {
+export const TextGenerateEffect = ({ words, className }: { words: string; className?: string }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
   useEffect(() => {
@@ -33,7 +27,7 @@ export const TextGenerateEffect = ({
             <motion.span
               key={word + idx}
               className={`${
-                idx > 3 ? "text-purple" : "dark:text-white text-black "
+                idx > 3 ? "text-purple-500 dark:text-purple-100" : "dark:text-white text-black "
               } opacity-0`}
             >
               {word}{" "}
@@ -47,9 +41,7 @@ export const TextGenerateEffect = ({
   return (
     <div className={cn("font-bold", className)}>
       <div className="my-4">
-        <div className=" dark:text-white text-black leading-snug tracking-wide">
-          {renderWords()}
-        </div>
+        <div className=" dark:text-white text-black leading-snug tracking-wide">{renderWords()}</div>
       </div>
     </div>
   );

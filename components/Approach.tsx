@@ -11,7 +11,7 @@ export default function Approach() {
   return (
     <section className="w-full py-20" id="approach">
       <h1 className="heading">
-        My <span className="text-purple">approach</span>
+        My <span className="text-purple-500 dark:text-purple-100">approach</span>
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
         <Card
@@ -21,10 +21,7 @@ export default function Approach() {
           and key functionalities. We'll discuss things like site structure, 
           navigation, and content requirements."
         >
-          <CanvasRevealEffect
-            animationSpeed={5.1}
-            containerClassName="bg-emerald-900"
-          />
+          <CanvasRevealEffect animationSpeed={5.1} containerClassName="bg-emerald-900" />
         </Card>
         <Card
           title="Development & Progress Update"
@@ -50,11 +47,7 @@ export default function Approach() {
          I'll translate everything into functional code, building your website
          from the ground up."
         >
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-sky-600"
-            colors={[[125, 211, 252]]}
-          />
+          <CanvasRevealEffect animationSpeed={3} containerClassName="bg-sky-600" colors={[[125, 211, 252]]} />
         </Card>
       </div>
     </section>
@@ -86,11 +79,7 @@ const Card = ({
 
       <AnimatePresence>
         {hovered && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="h-full w-full absolute inset-0"
-          >
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="h-full w-full absolute inset-0">
             {children}
           </motion.div>
         )}
